@@ -1,0 +1,435 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Libre+Baskerville&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Libre+Baskerville&family=Rokkitt:wght@300&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/earlyaccess/hannari.css');
+
+/* body */
+
+body{
+    margin: 0;
+    width: 100%;
+    display: inline-block;
+    background-image: url(img/SIMPLE.\ cafe_background-img.png);
+    background-size: auto;
+}
+
+/* nav */
+
+.header-nav{
+    height: 120px;
+    background-color: #CFC3BA;
+    text-align: center;
+    margin-top: -21px;
+    margin-bottom: -21px;
+}
+
+.header-logo img{
+    width: 110px;
+    height: 110px;
+}
+
+.header-gnav-content ul{
+    list-style: none;
+}
+
+.header-gnav{
+    text-align: center;
+    font-family: "Comfortaa";
+    height: 670px;
+    background-color: blanchedalmond;
+}
+
+.header-gnav-logo img{
+    width: 200px;
+    height: 200px;
+    padding-bottom: 15px;
+}
+
+.header-gnav-item{
+    font-size: 35px;
+    padding-right: 35px;
+    padding-top: 5px;
+}
+
+.header-gnav-item a{
+    color: black;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 1em;
+}
+
+.header-gnav-item a:before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: -20px;
+    display: inline-block;
+    width: 500px;
+    height: 2px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-color: black;
+    border-radius: 2px;
+}
+
+.header-gnav-item-df{
+    font-size: 35px;
+    padding-right: 35px;
+    padding-top: 10px;
+}
+
+.header-gnav-item-df a{
+    color: black;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 1em;
+}
+
+.header-gnav-item-df a:before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: -25px;
+    width: 500px;
+    height: 2px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-color: black;
+    border-radius: 2px;
+}
+
+.header-gnav-item-df a:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -20px;
+    display: inline-block;
+    width: 500px;
+    height: 2px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-color: black;
+    border-radius: 2px;
+}
+
+.header-gnav-item a:hover {
+color:#CFC3BA;
+text-decoration:underline;
+text-decoration: none;
+}
+
+.header-gnav-item-df a:hover{
+color:#CFC3BA;
+text-decoration:underline;
+text-decoration: none;
+}
+
+.header-gnav-btn{
+    padding-right: 80px;
+}
+
+.header-gnav-btn-item{
+    display: inline;
+    padding: 0 10px;
+}
+
+.header-gnav-btn-item a{
+    color: black;
+}
+
+.header-gnav-btn-item a:hover{
+color:#CFC3BA;
+text-decoration:underline;
+text-decoration: none;
+}
+
+/* gnav animation */
+
+.menu-btn{
+    position: fixed;
+    top: 40px;
+    right: 50px;
+    z-index: 21;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgba(0,0,0,0);
+    color: #fff;
+  }
+  
+  .header-gnav{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 20;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #CFC3BA;
+  }
+
+  .header-gnav-logo.header-gnav-item.header-gnav-btn-item.header-gnav-item-df{
+    width: 100%;
+    height: auto;
+    padding: .5em 1em;
+    text-align: center;
+    color: #fff;
+    box-sizing: border-box;
+  }
+  
+  .header-gnav{
+    transform: translateY(-100vw);
+    transition: all .3s linear;
+  }
+
+  .header-gnav.is-active{
+    transform: translateX(0);
+    background: #CFC3BA;
+  }
+
+  /* header-title */
+
+  .header-title{
+    height: 200px;
+    text-align: center;
+  }
+
+  .header-title h2{
+      font-size: 50px;
+    font-family: "Rokkitt";
+    position: relative;
+    top: 40px;
+  }
+
+  .header-title p{
+    font-family: "Hannari";
+  }
+
+   /* main-news-lineup */
+
+   .main-news-lineup{
+    height: 600px;
+    margin-left: 350px;
+    font-family: "Rokkitt";
+}
+
+.main-news-time{
+    font-weight: bold;
+    font-size: 20px;
+    padding-right: 30px;
+}
+
+.main-news-post{
+  display: flex;
+  flex-direction: column;
+}
+
+.main-news-post a{
+  text-decoration: none;
+  color: black;
+}
+
+.main-news-post a:hover{
+  color: rgb(184, 11, 11);
+}
+
+.main-news-post li{
+  border-bottom:1px dotted #000;
+  list-style:none;
+  padding:10px;
+  margin-bottom: 35px;
+  width:70%;
+  font-family: "Rokkitt";
+}
+
+.main-news-content{
+  border-radius:3px;
+  color:black;
+  display:inline-block;
+  padding:5px;
+}
+
+/* main-news-content-open */
+
+.content{
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.modal{
+    display: none;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.modal__bg{
+    background: rgba(0,0,0,0.8);
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+}
+
+.modal__content{
+    background: #fff;
+    left: 50%;
+    padding: 100px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 60%;
+    height: 500px;
+}
+
+.modal__content a{
+    position: fixed;
+    bottom: 0;
+    padding-bottom: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+.modal__content h2{
+    padding-bottom: 90px;
+    text-align: center;
+    font-family: "Rokkitt";
+}
+
+.modal__content h3{
+    font-size: 30px;
+    font-family: "Rokkitt";
+}
+
+.modal__content p{
+    padding-left: 100px;
+    font-size: 18px;
+    font-family: "Hannari";
+}
+
+.news-close{
+    text-align: center;
+}
+
+/* main-footer */
+
+.main-footer{
+    height: 150px;
+    text-align: center;
+    background-color: white;
+    padding-top: 5px;
+    position: relative;
+    top: 50px;
+}
+
+.main-footer h2{
+    font-size: 50px;
+    font-family: "Rokkitt";
+}
+
+.main-footer small{
+    display: block;
+    font-size: 15px;
+    font-family: "Hannari";
+}
+
+/* footer */
+
+footer{
+    height: 250px;
+    background-image: url(img/SIMPLE.cafe_footer-background.png);
+    background-size: auto;
+    position: relative;
+    top: 50px;
+}
+
+.footer-logo img{
+    width: 250px;
+    height: 250px;
+    position: relative;
+    left: 10%;
+    margin-bottom: -170px;
+}
+
+.footer-nav{
+    list-style: none;
+    text-decoration: none;
+    position: relative;
+    width: 50%;
+    left: 37.5%;
+    bottom: 10px;
+    margin-bottom: -50px;
+}
+
+.footer-nav li{
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Rokkitt";
+    padding-right: 70px;
+}
+
+.footer-nav a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer-information{
+    position: relative;
+    width: 60%;
+    left: 40%;
+    color: white;
+    font-family: "Hannari";
+}
+
+.footer-privacy{
+    position: relative;
+    width: 30%;
+    left: 70%;
+    bottom: 120px;
+}
+
+.footer-privacy a{
+    text-decoration: none;
+    color: white;
+    font-family: "Hannari";
+}
+
+.footer-content{
+    position: relative;
+    bottom: 50px;
+}
+
+.footer-gnav-btn{
+    padding-right: 80px;
+    position: relative;
+    width: 20%;
+    left: 67%;
+    bottom: 75px;
+}
+
+.footer-gnav-btn-item{
+    display: inline;
+    padding: 0 10px;
+}
+
+.footer-gnav-btn-item a{
+    color: white;
+}
+
+.footer-gnav-btn-item a:hover{
+color:#CFC3BA;
+text-decoration:underline;
+text-decoration: none;
+}
+
+
+

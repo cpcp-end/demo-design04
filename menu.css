@@ -1,0 +1,1172 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Libre+Baskerville&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Libre+Baskerville&family=Rokkitt:wght@300&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/earlyaccess/hannari.css');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Libre+Baskerville&family=M+PLUS+Rounded+1c:wght@300&family=Rokkitt:wght@300&family=Ubuntu:wght@300&display=swap');
+
+/* body */
+
+body{
+    margin: 0;
+    width: 100%;
+    display: inline-block;
+    background-image: url(img/SIMPLE.\ cafe_background-img.png);
+    background-size: auto;
+}
+
+/* nav */
+
+.header-nav{
+    height: 120px;
+    background-color: #CFC3BA;
+    text-align: center;
+    margin-top: -21px;
+    margin-bottom: -21px;
+}
+
+.header-logo img{
+    width: 110px;
+    height: 110px;
+}
+
+.header-gnav-content ul{
+    list-style: none;
+}
+
+.header-gnav{
+    text-align: center;
+    font-family: "Comfortaa";
+    height: 670px;
+    background-color: blanchedalmond;
+}
+
+.header-gnav-logo img{
+    width: 200px;
+    height: 200px;
+    padding-bottom: 15px;
+}
+
+.header-gnav-item{
+    font-size: 35px;
+    padding-right: 35px;
+    padding-top: 5px;
+}
+
+.header-gnav-item a{
+    color: black;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 1em;
+}
+
+.header-gnav-item a:before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: -20px;
+    display: inline-block;
+    width: 500px;
+    height: 2px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-color: black;
+    border-radius: 2px;
+}
+
+.header-gnav-item-df{
+    font-size: 35px;
+    padding-right: 35px;
+    padding-top: 10px;
+}
+
+.header-gnav-item-df a{
+    color: black;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 1em;
+}
+
+.header-gnav-item-df a:before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: -25px;
+    width: 500px;
+    height: 2px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-color: black;
+    border-radius: 2px;
+}
+
+.header-gnav-item-df a:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -20px;
+    display: inline-block;
+    width: 500px;
+    height: 2px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-color: black;
+    border-radius: 2px;
+}
+
+.header-gnav-item a:hover {
+color:#CFC3BA;
+text-decoration:underline;
+text-decoration: none;
+}
+
+.header-gnav-item-df a:hover{
+color:#CFC3BA;
+text-decoration:underline;
+text-decoration: none;
+}
+
+.header-gnav-btn{
+    padding-right: 80px;
+}
+
+.header-gnav-btn-item{
+    display: inline;
+    padding: 0 10px;
+}
+
+.header-gnav-btn-item a{
+    color: black;
+}
+
+.header-gnav-btn-item a:hover{
+color:#CFC3BA;
+text-decoration:underline;
+text-decoration: none;
+}
+
+/* gnav animation */
+
+.menu-btn{
+    position: fixed;
+    top: 40px;
+    right: 50px;
+    z-index: 21;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgba(0,0,0,0);
+    color: #fff;
+  }
+  
+  .header-gnav{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 20;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #CFC3BA;
+  }
+
+  .header-gnav-logo.header-gnav-item.header-gnav-btn-item.header-gnav-item-df{
+    width: 100%;
+    height: auto;
+    padding: .5em 1em;
+    text-align: center;
+    color: #fff;
+    box-sizing: border-box;
+  }
+  
+  .header-gnav{
+    transform: translateY(-100vw);
+    transition: all .3s linear;
+  }
+
+  .header-gnav.is-active{
+    transform: translateX(0);
+    background: #CFC3BA;
+  }
+
+    /* header-title */
+
+    .header-title{
+        height: 150px;
+        text-align: center;
+      }
+    
+      .header-title h2{
+          font-size: 50px;
+          font-family: "Comfortaa","Tsukushi B Round Gothic","筑紫B丸ゴシック";
+        position: relative;
+        top: 40px;
+      }
+    
+      .header-title p{
+        font-family: "Comfortaa","Tsukushi B Round Gothic","筑紫B丸ゴシック";
+      }
+
+      /* menu-coffee-title */
+
+      .menu-coffee-title{
+          height: 100px;
+          padding-left: 200px;
+          padding-top: 2px;
+          float: left;
+          display: inline-flex;
+          width: auto;
+      }
+
+      .menu-coffee-title h2{
+          font-size: 40px;
+          font-family: "Comfortaa","Tsukushi B Round Gothic","筑紫B丸ゴシック";
+      }
+
+      .menu-coffee-img img{
+        width: 110px;
+        height: 110px;
+        padding-left: 40px;
+      }
+
+      .menu-coffee-img1 img{
+        width: 110px;
+        height: 110px;
+       margin-left: -20px;
+      }
+
+      /* menu-coffee-lineup */
+
+.menu-coffee-lineup{
+    padding-top: 50px;
+    text-align: center;
+    height: 350px;
+    display:flex;
+    width:100%;
+}
+
+.menu-coffee-lineup h2{
+    padding-top: 35px;
+    font-size: 25px;
+    font-family: "Comfortaa","Tsukushi B Round Gothic","筑紫B丸ゴシック";
+}
+
+.menu-coffee-lineup-img img{
+    width: 200px;
+    height: 200px;
+}
+
+.menu-coffee-lineup-img h2{
+    position: relative;
+    bottom: 40px;
+    font-family: "Comfortaa","Tsukushi B Round Gothic","筑紫B丸ゴシック";
+}
+
+.menu-coffee-lineup-img p{
+    position: relative;
+    bottom: 40px;
+    font-size: 20px;
+    font-family: "Comfortaa","Tsukushi B Round Gothic","筑紫B丸ゴシック";
+}
+
+.menu-coffee-lineup-img1{
+    position: relative;
+    left: 5%;
+    width: 30%;
+}
+
+.menu-coffee-lineup-img1 img{
+    width: 200px;
+    height: 200px;
+}
+
+.menu-coffee-lineup-img1 h2{
+    position: relative;
+    bottom: 40px;
+    font-family: "Comfortaa","Tsukushi B Round Gothic","筑紫B丸ゴシック";
+}
+
+.menu-coffee-lineup-img1 p{
+    position: relative;
+    bottom: 40px;
+    font-size: 20px;
+    font-family: "Comfortaa","Tsukushi B Round Gothic","筑紫B丸ゴシック";
+}
+
+.menu-coffee-lineup-img2{
+    position: relative;
+    right: 5%;
+    width: 30%;
+}
+
+.menu-coffee-lineup-img2 img{
+    width: 200px;
+    height: 200px;
+}
+
+.menu-coffee-lineup-img2 h2{
+    position: relative;
+    bottom: 40px;
+    font-family: "Comfortaa","Tsukushi B Round Gothic","筑紫B丸ゴシック";
+}
+
+.menu-coffee-lineup-img2 p{
+    position: relative;
+    bottom: 40px;
+    font-size: 20px;
+    font-family: "Comfortaa","Tsukushi B Round Gothic","筑紫B丸ゴシック";
+}
+
+.menu-coffee-lineup>div{
+    width:calc(100% / 3);
+    text-align:center;
+    padding: 5px;
+}
+
+    .menu-coffee-lineup>div>img{
+    max-width:100%;
+    height:auto;
+}
+
+      /* menu-coffee-lineup1 */
+
+.menu-coffee-lineup1{
+    padding-top: 50px;
+    text-align: center;
+    height: 350px;
+    display:flex;
+    width:100%;
+}
+
+.menu-coffee-lineup1 h2{
+    padding-top: 35px;
+    font-size: 25px;
+    font-family: "Comfortaa","Tsukushi B Round Gothic","筑紫B丸ゴシック";
+}
+
+.menu-coffee-lineup1-img img{
+    width: 200px;
+    height: 200px;
+}
+
+.menu-coffee-lineup1-img h2{
+    position: relative;
+    bottom: 40px;
+    font-family: "Comfortaa","Tsukushi B Round Gothic","筑紫B丸ゴシック";
+}
+
+.menu-coffee-lineup1-img p{
+    position: relative;
+    bottom: 40px;
+    font-size: 20px;
+    font-family: "Comfortaa","Tsukushi B Round Gothic","筑紫B丸ゴシック";
+}
+
+.menu-coffee-lineup1-img1{
+    position: relative;
+    left: 5%;
+    width: 30%;
+}
+
+.menu-coffee-lineup1-img1 img{
+    width: 200px;
+    height: 200px;
+}
+
+.menu-coffee-lineup1-img1 h2{
+    position: relative;
+    bottom: 40px;
+    font-family: "Comfortaa","Tsukushi B Round Gothic","筑紫B丸ゴシック";
+}
+
+.menu-coffee-lineup1-img1 p{
+    position: relative;
+    bottom: 40px;
+    font-size: 20px;
+    font-family: "Comfortaa","Tsukushi B Round Gothic","筑紫B丸ゴシック";
+}
+
+.menu-coffee-lineup1-img2{
+    position: relative;
+    right: 5%;
+    width: 30%;
+}
+
+.menu-coffee-lineup1-img2 img{
+    width: 200px;
+    height: 200px;
+}
+
+.menu-coffee-lineup1-img2 h2{
+    position: relative;
+    bottom: 40px;
+    font-family: "Comfortaa","Tsukushi B Round Gothic","筑紫B丸ゴシック";
+}
+
+.menu-coffee-lineup1-img2 p{
+    position: relative;
+    bottom: 40px;
+    font-size: 20px;
+    font-family: "Comfortaa","Tsukushi B Round Gothic","筑紫B丸ゴシック";
+}
+
+.menu-coffee-lineup1>div{
+    width:calc(100% / 3);
+    text-align:center;
+    padding: 5px;
+}
+
+    .menu-coffee-lineup1>div>img{
+    max-width:100%;
+    height:auto;
+}
+
+      /* menu-cake-title */
+
+      .menu-cake-title{
+        height: 100px;
+        padding-left: 200px;
+        padding-top: 2px;
+        float: left;
+        display: inline-flex;
+        width: auto;
+    }
+
+    .menu-cake-title h2{
+        font-size: 40px;
+        font-family: "Comfortaa","Tsukushi B Round Gothic","筑紫B丸ゴシック";
+    }
+
+    .menu-cake-img img{
+      width: 110px;
+      height: 110px;
+      padding-left: 40px;
+    }
+
+    .menu-cake-img1 img{
+      width: 110px;
+      height: 110px;
+     margin-left: -20px;
+    }
+
+         /* menu-cake-lineup */
+
+.menu-cake-lineup{
+    padding-top: 50px;
+    text-align: center;
+    height: 350px;
+    display:flex;
+    width:100%;
+}
+
+.menu-cake-lineup h2{
+    padding-top: 35px;
+    font-size: 25px;
+    font-family: "Comfortaa","Tsukushi B Round Gothic","筑紫B丸ゴシック";
+}
+
+.menu-cake-lineup-img img{
+    width: 200px;
+    height: 200px;
+}
+
+.menu-cake-lineup-img h2{
+    position: relative;
+    bottom: 40px;
+    font-family: "Comfortaa","Tsukushi B Round Gothic","筑紫B丸ゴシック";
+}
+
+.menu-cake-lineup-img p{
+    position: relative;
+    bottom: 40px;
+    font-size: 20px;
+    font-family: "Comfortaa","Tsukushi B Round Gothic","筑紫B丸ゴシック";
+}
+
+.menu-cake-lineup-img1{
+    position: relative;
+    left: 5%;
+    width: 30%;
+}
+
+.menu-cake-lineup-img1 img{
+    width: 200px;
+    height: 200px;
+}
+
+.menu-cake-lineup-img1 h2{
+    position: relative;
+    bottom: 40px;
+    font-family: "Comfortaa","Tsukushi B Round Gothic","筑紫B丸ゴシック";
+}
+
+.menu-cake-lineup-img1 p{
+    position: relative;
+    bottom: 40px;
+    font-size: 20px;
+    font-family: "Comfortaa","Tsukushi B Round Gothic","筑紫B丸ゴシック";
+}
+
+.menu-cake-lineup-img2{
+    position: relative;
+    right: 5%;
+    width: 30%;
+}
+
+.menu-cake-lineup-img2 img{
+    width: 200px;
+    height: 200px;
+}
+
+.menu-cake-lineup-img2 h2{
+    position: relative;
+    bottom: 40px;
+    font-family: "Comfortaa","Tsukushi B Round Gothic","筑紫B丸ゴシック";
+}
+
+.menu-cake-lineup-img2 p{
+    position: relative;
+    bottom: 40px;
+    font-size: 20px;
+    font-family: "Comfortaa","Tsukushi B Round Gothic","筑紫B丸ゴシック";
+}
+
+.menu-cake-lineup>div{
+    width:calc(100% / 3);
+    text-align:center;
+    padding: 5px;
+}
+
+    .menu-cake-lineup>div>img{
+    max-width:100%;
+    height:auto;
+}
+
+         /* menu-cake-lineup1 */
+
+.menu-cake-lineup1{
+    padding-top: 50px;
+    text-align: center;
+    height: 350px;
+    display:flex;
+    width:100%;
+    margin-bottom: -160px;
+}
+
+.menu-cake-lineup1 h2{
+    padding-top: 35px;
+    font-size: 25px;
+    font-family: "Comfortaa","Tsukushi B Round Gothic","筑紫B丸ゴシック";
+}
+
+.menu-cake-lineup1-img img{
+    width: 200px;
+    height: 200px;
+}
+
+.menu-cake-lineup1-img h2{
+    position: relative;
+    bottom: 40px;
+    font-family: "Comfortaa","Tsukushi B Round Gothic","筑紫B丸ゴシック";
+}
+
+.menu-cake-lineup1-img p{
+    position: relative;
+    bottom: 40px;
+    font-size: 20px;
+    font-family: "Comfortaa","Tsukushi B Round Gothic","筑紫B丸ゴシック";
+}
+
+.menu-cake-lineup1-img1{
+    position: relative;
+    left: 5%;
+    width: 30%;
+}
+
+.menu-cake-lineup1-img1 img{
+    width: 200px;
+    height: 200px;
+}
+
+.menu-cake-lineup1-img1 h2{
+    position: relative;
+    bottom: 40px;
+    font-family: "Comfortaa","Tsukushi B Round Gothic","筑紫B丸ゴシック";
+}
+
+.menu-cake-lineup1-img1 p{
+    position: relative;
+    bottom: 40px;
+    font-size: 20px;
+    font-family: "Comfortaa","Tsukushi B Round Gothic","筑紫B丸ゴシック";
+}
+
+.menu-cake-lineup1-img2{
+    position: relative;
+    right: 5%;
+    width: 30%;
+}
+
+.menu-cake-lineup1-img2 img{
+    width: 200px;
+    height: 200px;
+}
+
+.menu-cake-lineup1-img2 h2{
+    position: relative;
+    bottom: 40px;
+    font-family: "Comfortaa","Tsukushi B Round Gothic","筑紫B丸ゴシック";
+}
+
+.menu-cake-lineup1-img2 p{
+    position: relative;
+    bottom: 40px;
+    font-size: 20px;
+    font-family: "Comfortaa","Tsukushi B Round Gothic","筑紫B丸ゴシック";
+}
+
+.menu-cake-lineup1>div{
+    width:calc(100% / 3);
+    text-align:center;
+    padding: 5px;
+}
+
+    .menu-cake-lineup1>div>img{
+    max-width:100%;
+    height:auto;
+}
+
+/* menu-cake-lineup-new */
+
+.menu-cake-lineup-new{
+    position: relative;
+    width: 20%;
+    left: 51%;
+    bottom: 275px;
+}
+
+.menu-cake-lineup-new img{
+    width: 150px;
+    height: 150px;
+}
+
+      /* menu-pasta-title */
+
+      .menu-pasta-title{
+        height: 100px;
+        padding-left: 200px;
+        padding-top: 2px;
+        float: left;
+        display: inline-flex;
+        width: auto;
+    }
+
+    .menu-pasta-title h2{
+        font-size: 40px;
+        font-family: "Comfortaa","Tsukushi B Round Gothic","筑紫B丸ゴシック";
+    }
+
+    .menu-pasta-img img{
+      width: 110px;
+      height: 110px;
+      padding-left: 40px;
+    }
+
+            /* menu-pasta-lineup */
+
+.menu-pasta-lineup{
+    padding-top: 50px;
+    text-align: center;
+    height: 350px;
+    display:flex;
+    width:100%;
+}
+
+.menu-pasta-lineup h2{
+    padding-top: 35px;
+    font-size: 25px;
+    font-family: "Comfortaa","Tsukushi B Round Gothic","筑紫B丸ゴシック";
+}
+
+.menu-pasta-lineup-img img{
+    width: 200px;
+    height: 200px;
+}
+
+.menu-pasta-lineup-img h2{
+    position: relative;
+    bottom: 40px;
+    font-family: "Comfortaa","Tsukushi B Round Gothic","筑紫B丸ゴシック";
+}
+
+.menu-pasta-lineup-img p{
+    position: relative;
+    bottom: 40px;
+    font-size: 20px;
+    font-family: "Comfortaa","Tsukushi B Round Gothic","筑紫B丸ゴシック";
+}
+
+.menu-pasta-lineup-img1{
+    position: relative;
+    left: 5%;
+    width: 30%;
+}
+
+.menu-pasta-lineup-img1 img{
+    width: 200px;
+    height: 200px;
+}
+
+.menu-pasta-lineup-img1 h2{
+    position: relative;
+    bottom: 40px;
+    font-family: "Comfortaa","Tsukushi B Round Gothic","筑紫B丸ゴシック";
+}
+
+.menu-pasta-lineup-img1 p{
+    position: relative;
+    bottom: 40px;
+    font-size: 20px;
+    font-family: "Comfortaa","Tsukushi B Round Gothic","筑紫B丸ゴシック";
+}
+
+.menu-pasta-lineup-img2{
+    position: relative;
+    right: 5%;
+    width: 30%;
+}
+
+.menu-pasta-lineup-img2 img{
+    width: 200px;
+    height: 200px;
+}
+
+.menu-pasta-lineup-img2 h2{
+    position: relative;
+    bottom: 40px;
+    font-family: "Comfortaa","Tsukushi B Round Gothic","筑紫B丸ゴシック";
+}
+
+.menu-pasta-lineup-img2 p{
+    position: relative;
+    bottom: 40px;
+    font-size: 20px;
+    font-family: "Comfortaa","Tsukushi B Round Gothic","筑紫B丸ゴシック";
+}
+
+.menu-pasta-lineup>div{
+    width:calc(100% / 3);
+    text-align:center;
+    padding: 5px;
+}
+
+    .menu-pasta-lineup>div>img{
+    max-width:100%;
+    height:auto;
+}
+
+      /* menu-pizza-title */
+
+      .menu-pizza-title{
+        height: 100px;
+        padding-left: 200px;
+        padding-top: 2px;
+        float: left;
+        display: inline-flex;
+        width: auto;
+    }
+
+    .menu-pizza-title h2{
+        font-size: 40px;
+        font-family: "Comfortaa","Tsukushi B Round Gothic","筑紫B丸ゴシック";
+    }
+
+    .menu-pizza-img img{
+      width: 110px;
+      height: 110px;
+      padding-left: 40px;
+    }
+
+            /* menu-pizza-lineup */
+
+.menu-pizza-lineup{
+    padding-top: 50px;
+    text-align: center;
+    height: 350px;
+    display:flex;
+    width:100%;
+}
+
+.menu-pizza-lineup h2{
+    padding-top: 35px;
+    font-size: 25px;
+    font-family: "Comfortaa","Tsukushi B Round Gothic","筑紫B丸ゴシック";
+}
+
+.menu-pizza-lineup-img img{
+    width: 200px;
+    height: 200px;
+}
+
+.menu-pizza-lineup-img h2{
+    position: relative;
+    bottom: 40px;
+    font-family: "Comfortaa","Tsukushi B Round Gothic","筑紫B丸ゴシック";
+}
+
+.menu-pizza-lineup-img p{
+    position: relative;
+    bottom: 40px;
+    font-size: 20px;
+    font-family: "Comfortaa","Tsukushi B Round Gothic","筑紫B丸ゴシック";
+}
+
+.menu-pizza-lineup-img1{
+    position: relative;
+    left: 5%;
+    width: 30%;
+}
+
+.menu-pizza-lineup-img1 img{
+    width: 200px;
+    height: 200px;
+}
+
+.menu-pizza-lineup-img1 h2{
+    position: relative;
+    bottom: 40px;
+    font-family: "Comfortaa","Tsukushi B Round Gothic","筑紫B丸ゴシック";
+}
+
+.menu-pizza-lineup-img1 p{
+    position: relative;
+    bottom: 40px;
+    font-size: 20px;
+    font-family: "Comfortaa","Tsukushi B Round Gothic","筑紫B丸ゴシック";
+}
+
+.menu-pizza-lineup-img2{
+    position: relative;
+    right: 5%;
+    width: 30%;
+}
+
+.menu-pizza-lineup-img2 img{
+    width: 200px;
+    height: 200px;
+}
+
+.menu-pizza-lineup-img2 h2{
+    position: relative;
+    bottom: 40px;
+    font-family: "Comfortaa","Tsukushi B Round Gothic","筑紫B丸ゴシック";
+}
+
+.menu-pizza-lineup-img2 p{
+    position: relative;
+    bottom: 40px;
+    font-size: 20px;
+    font-family: "Comfortaa","Tsukushi B Round Gothic","筑紫B丸ゴシック";
+}
+
+.menu-pizza-lineup>div{
+    width:calc(100% / 3);
+    text-align:center;
+    padding: 5px;
+}
+
+    .menu-pizza-lineup>div>img{
+    max-width:100%;
+    height:auto;
+}
+
+      /* menu-kids-title */
+
+      .menu-kids-title{
+        height: 100px;
+        padding-left: 200px;
+        padding-top: 2px;
+        float: left;
+        display: inline-flex;
+        width: auto;
+    }
+
+    .menu-kids-title h2{
+        font-size: 40px;
+        font-family: "Comfortaa","Tsukushi B Round Gothic","筑紫B丸ゴシック";
+    }
+
+    .menu-kids-img img{
+      width: 110px;
+      height: 110px;
+      padding-left: 40px;
+    }
+
+            /* menu-kids-lineup */
+
+.menu-kids-lineup{
+    padding-top: 50px;
+    text-align: center;
+    height: 350px;
+    display:flex;
+    width:100%;
+}
+
+.menu-kids-lineup h2{
+    padding-top: 35px;
+    font-size: 25px;
+    font-family: "Comfortaa","Tsukushi B Round Gothic","筑紫B丸ゴシック";
+}
+
+.menu-kids-lineup-img img{
+    width: 200px;
+    height: 200px;
+}
+
+.menu-kids-lineup-img h2{
+    position: relative;
+    bottom: 40px;
+    font-family: "Comfortaa","Tsukushi B Round Gothic","筑紫B丸ゴシック";
+}
+
+.menu-kids-lineup-img p{
+    position: relative;
+    bottom: 40px;
+    font-size: 20px;
+    font-family: "Comfortaa","Tsukushi B Round Gothic","筑紫B丸ゴシック";
+}
+
+.menu-kids-lineup-img1{
+    position: relative;
+    left: 5%;
+    width: 30%;
+}
+
+.menu-kids-lineup-img1 img{
+    width: 200px;
+    height: 200px;
+}
+
+.menu-kids-lineup-img1 h2{
+    position: relative;
+    bottom: 40px;
+    font-family: "Comfortaa","Tsukushi B Round Gothic","筑紫B丸ゴシック";
+}
+
+.menu-kids-lineup-img1 p{
+    position: relative;
+    bottom: 40px;
+    font-size: 20px;
+    font-family: "Comfortaa","Tsukushi B Round Gothic","筑紫B丸ゴシック";
+}
+
+.menu-kids-lineup-img2{
+    position: relative;
+    right: 5%;
+    width: 30%;
+}
+
+.menu-kids-lineup-img2 img{
+    width: 200px;
+    height: 200px;
+}
+
+.menu-kids-lineup-img2 h2{
+    position: relative;
+    bottom: 40px;
+    font-family: "Comfortaa","Tsukushi B Round Gothic","筑紫B丸ゴシック";
+}
+
+.menu-kids-lineup-img2 p{
+    position: relative;
+    bottom: 40px;
+    font-size: 20px;
+    font-family: "Comfortaa","Tsukushi B Round Gothic","筑紫B丸ゴシック";
+}
+
+.menu-kids-lineup>div{
+    width:calc(100% / 3);
+    text-align:center;
+    padding: 5px;
+}
+
+    .menu-kids-lineup>div>img{
+    max-width:100%;
+    height:auto;
+}
+
+      /* menu-lunchmenu-title */
+
+      .menu-lunchmenu-title{
+        height: 100px;
+        padding-left: 200px;
+        padding-top: 2px;
+        float: left;
+        display: inline-flex;
+        width: auto;
+    }
+
+    .menu-lunchmenu-title h2{
+        font-size: 40px;
+        font-family: "Comfortaa","Tsukushi B Round Gothic","筑紫B丸ゴシック";
+    }
+
+    .menu-lunchmenu-img img{
+      width: 110px;
+      height: 110px;
+      padding-left: 40px;
+    }
+
+    /* menu-lunchmenu-lineup */
+
+.menu-lunchmenu-lineup{
+    padding-top: 50px;
+    text-align: center;
+    height: 350px;
+    display:flex;
+    width:100%;
+}
+
+.menu-lunchmenu-lineup-img img{
+    width: 880px;
+    height: 320px;
+}
+
+.menu-lunchmenu-lineup-img1{
+    margin-left: 125px;
+    margin-right: 30px;
+}
+
+.menu-lunchmenu-lineup-img1 img{
+    width: 880px;
+    height: 320px;
+}
+
+.menu-lunchmenu-lineup>div{
+    width:calc(80% / 2);
+    text-align:center;
+    padding: 5px;
+}
+
+    .menu-lunchmenu-lineup>div>img{
+    max-width:100%;
+    height:auto;
+}
+
+  /* main-footer */
+
+  .main-footer{
+    height: 150px;
+    text-align: center;
+    background-color: white;
+    padding-top: 5px;
+}
+
+.main-footer h2{
+    font-size: 50px;
+    font-family: "Comfortaa","Tsukushi B Round Gothic","筑紫B丸ゴシック";
+}
+
+.main-footer small{
+    display: block;
+    font-size: 15px;
+    font-family: "Comfortaa","Tsukushi B Round Gothic","筑紫B丸ゴシック";
+}
+
+/* footer */
+
+footer{
+    height: 310px;
+    background-image: url(img/SIMPLE.cafe_footer-background.png);
+    background-size: auto;
+}
+
+.footer-logo img{
+    width: 250px;
+    height: 250px;
+    position: relative;
+    left: 10%;
+    top: 20px;
+    margin-bottom: -150px;
+}
+
+.footer-nav{
+    list-style: none;
+    text-decoration: none;
+    position: relative;
+    width: 60%;
+    left: 37%;
+    bottom: 30px;
+    top: 20px;
+    margin-bottom: -50px;
+}
+
+.footer-nav li{
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Comfortaa","Tsukushi B Round Gothic","筑紫B丸ゴシック";
+    padding-right: 70px;
+}
+
+.footer-nav a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer-information{
+    position: relative;
+    width: 60%;
+    left: 40%;
+    color: white;
+    font-family: "Comfortaa","Tsukushi B Round Gothic","筑紫B丸ゴシック";
+}
+
+.footer-privacy{
+    position: relative;
+    width: 30%;
+    left: 70%;
+    bottom: 120px;
+}
+
+.footer-privacy a{
+    text-decoration: none;
+    color: white;
+    font-family: "Comfortaa","Tsukushi B Round Gothic","筑紫B丸ゴシック";
+}
+
+.footer-content{
+    position: relative;
+    bottom: 50px;
+} 
+
+.footer-gnav-btn{
+    padding-right: 80px;
+    position: relative;
+    width: 20%;
+    left: 67%;
+    bottom: 75px;
+}
+
+.footer-gnav-btn-item{
+    display: inline;
+    padding: 0 10px;
+}
+
+.footer-gnav-btn-item a{
+    color: white;
+}
+
+.footer-gnav-btn-item a:hover{
+color:#CFC3BA;
+text-decoration:underline;
+text-decoration: none;
+}
+

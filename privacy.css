@@ -1,0 +1,204 @@
+
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Libre+Baskerville&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Libre+Baskerville&family=Rokkitt:wght@300&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/earlyaccess/hannari.css');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Libre+Baskerville&family=M+PLUS+Rounded+1c:wght@300&family=Rokkitt:wght@300&family=Ubuntu:wght@300&display=swap');
+
+/* body */
+
+body{
+    font-family: "Comfortaa","Tsukushi B Round Gothic","筑紫B丸ゴシック";
+    margin: 0;
+    width: 100%;
+    display: inline-block;
+    background-image: url(img/SIMPLE.\ cafe_background-img.png);
+    background-size: auto;
+}
+
+    /* header */
+
+   header ul {
+     list-style:none;
+   }
+
+   .header-nav {
+    padding: 0 30px;
+     display: flex;
+     height:100px;
+     align-items: center;
+     background-color: white;
+   }
+   .header-nav nav {
+     margin-left: auto;
+   }
+
+   .header-nav i{
+       margin-bottom: 15px;
+       margin-top: 10px;
+   }
+
+   .header-nav ul {
+    font-family: "Comfortaa","Tsukushi B Round Gothic","筑紫B丸ゴシック";
+     display: flex;
+     text-align: center;
+   }
+   .header-nav ul li {
+     margin-left: 20px;
+   }
+
+   .header-nav li {
+     font-size: 20px;
+     padding-right: 15px;
+   }
+
+   .header-nav p{
+       margin-top: -4px;
+       font-size: 8px;
+   }
+
+   .header-nav img{
+    width: 300px;
+    height: 90px;
+   }
+
+   .header-nav a{
+       text-decoration: none;
+       color: black;
+   }
+
+   /* privacy-textbox */
+
+   .privacy-textbox{
+       padding-top: 50px;
+       height: 1400px;
+       padding-left: 80px;
+       padding-right: 80px;
+   }
+
+   .privacy-textbox h2{
+       border-top: 1px solid rgb(59, 59, 59, 0.5);
+       font-size: 17px;
+       padding-top: 30px;
+   }
+
+   .privacy-textbox p{
+       padding-bottom: 10px;
+   }
+
+   .privacy-textbox a{
+       text-decoration: none;
+       color: black;
+   }
+
+     /* main-footer */
+
+  .main-footer{
+    height: 150px;
+    text-align: center;
+    background-color: white;
+    padding-top: 5px;
+}
+
+.main-footer h2{
+    font-size: 50px;
+    font-family: "Comfortaa","Tsukushi B Round Gothic","筑紫B丸ゴシック";
+}
+
+.main-footer small{
+    display: block;
+    font-size: 15px;
+    font-family: "Comfortaa","Tsukushi B Round Gothic","筑紫B丸ゴシック";
+}
+
+/* footer */
+
+footer{
+    height: 310px;
+    background-image: url(img/SIMPLE.cafe_footer-background.png);
+    background-size: auto;
+}
+
+.footer-logo img{
+    width: 250px;
+    height: 250px;
+    position: relative;
+    left: 10%;
+    top: 20px;
+    margin-bottom: -150px;
+}
+
+.footer-nav{
+    list-style: none;
+    text-decoration: none;
+    position: relative;
+    width: 60%;
+    left: 37%;
+    bottom: 30px;
+    top: 20px;
+    margin-bottom: -50px;
+}
+
+.footer-nav li{
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Comfortaa","Tsukushi B Round Gothic","筑紫B丸ゴシック";
+    padding-right: 70px;
+}
+
+.footer-nav a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer-information{
+    position: relative;
+    width: 60%;
+    left: 40%;
+    color: white;
+    font-family: "Comfortaa","Tsukushi B Round Gothic","筑紫B丸ゴシック";
+}
+
+.footer-privacy{
+    position: relative;
+    width: 30%;
+    left: 70%;
+    bottom: 120px;
+}
+
+.footer-privacy a{
+    text-decoration: none;
+    color: white;
+    font-family: "Comfortaa","Tsukushi B Round Gothic","筑紫B丸ゴシック";
+}
+
+.footer-content{
+    position: relative;
+    bottom: 50px;
+} 
+
+.footer-gnav-btn{
+    padding-right: 80px;
+    position: relative;
+    width: 20%;
+    left: 67%;
+    bottom: 75px;
+}
+
+.footer-gnav-btn-item{
+    display: inline;
+    padding: 0 10px;
+}
+
+.footer-gnav-btn-item a{
+    color: white;
+}
+
+.footer-gnav-btn-item a:hover{
+color:#CFC3BA;
+text-decoration:underline;
+text-decoration: none;
+}
+

@@ -1,0 +1,565 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Libre+Baskerville&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Libre+Baskerville&family=Rokkitt:wght@300&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/earlyaccess/hannari.css');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Libre+Baskerville&family=M+PLUS+Rounded+1c:wght@300&family=Rokkitt:wght@300&family=Ubuntu:wght@300&display=swap');
+
+/* body */
+
+body{
+    font-family: "Comfortaa","Tsukushi B Round Gothic","筑紫B丸ゴシック";
+    margin: 0;
+    width: 100%;
+    display: inline-block;
+    background-image: url(img/SIMPLE.\ cafe_background-img.png);
+    background-size: auto;
+}
+
+/* nav */
+
+.header-nav{
+    height: 120px;
+    background-color: #CFC3BA;
+    text-align: center;
+    margin-top: -21px;
+    margin-bottom: -21px;
+}
+
+.header-logo img{
+    width: 110px;
+    height: 110px;
+}
+
+.header-gnav-content ul{
+    list-style: none;
+}
+
+.header-gnav{
+    text-align: center;
+    font-family: "Comfortaa";
+    height: 670px;
+    background-color: blanchedalmond;
+}
+
+.header-gnav-logo img{
+    width: 200px;
+    height: 200px;
+    padding-bottom: 15px;
+}
+
+.header-gnav-item{
+    font-size: 35px;
+    padding-right: 35px;
+    padding-top: 5px;
+}
+
+.header-gnav-item a{
+    color: black;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 1em;
+}
+
+.header-gnav-item a:before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: -20px;
+    display: inline-block;
+    width: 500px;
+    height: 2px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-color: black;
+    border-radius: 2px;
+}
+
+.header-gnav-item-df{
+    font-size: 35px;
+    padding-right: 35px;
+    padding-top: 10px;
+}
+
+.header-gnav-item-df a{
+    color: black;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 1em;
+}
+
+.header-gnav-item-df a:before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: -25px;
+    width: 500px;
+    height: 2px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-color: black;
+    border-radius: 2px;
+}
+
+.header-gnav-item-df a:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -20px;
+    display: inline-block;
+    width: 500px;
+    height: 2px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-color: black;
+    border-radius: 2px;
+}
+
+.header-gnav-item a:hover {
+color:#CFC3BA;
+text-decoration:underline;
+text-decoration: none;
+}
+
+.header-gnav-item-df a:hover{
+color:#CFC3BA;
+text-decoration:underline;
+text-decoration: none;
+}
+
+.header-gnav-btn{
+    padding-right: 80px;
+}
+
+.header-gnav-btn-item{
+    display: inline;
+    padding: 0 10px;
+}
+
+.header-gnav-btn-item a{
+    color: black;
+}
+
+.header-gnav-btn-item a:hover{
+color:#CFC3BA;
+text-decoration:underline;
+text-decoration: none;
+}
+
+/* gnav animation */
+
+.menu-btn{
+    position: fixed;
+    top: 40px;
+    right: 50px;
+    z-index: 21;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgba(0,0,0,0);
+    color: #fff;
+  }
+  
+  .header-gnav{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 20;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #CFC3BA;
+  }
+
+  .header-gnav-logo.header-gnav-item.header-gnav-btn-item.header-gnav-item-df{
+    width: 100%;
+    height: auto;
+    padding: .5em 1em;
+    text-align: center;
+    color: #fff;
+    box-sizing: border-box;
+  }
+  
+  .header-gnav{
+    transform: translateY(-100vw);
+    transition: all .3s linear;
+  }
+
+  .header-gnav.is-active{
+    transform: translateX(0);
+    background: #CFC3BA;
+  }
+
+    /* header-title */
+
+    .header-title{
+        height: 150px;
+        text-align: center;
+      }
+    
+      .header-title h2{
+          font-size: 50px;
+          font-family: "Comfortaa","Tsukushi B Round Gothic","筑紫B丸ゴシック";
+        position: relative;
+        top: 40px;
+      }
+    
+      .header-title p{
+        font-family: "Comfortaa","Tsukushi B Round Gothic","筑紫B丸ゴシック";
+      }
+
+
+
+
+.as{
+    height: 1100px;
+}
+
+      section {
+        position: absolute;
+        display: none;
+      }
+      
+      /* 表示スタイル（動作に無関係） */
+      section {
+        padding: 3rem;
+        width: 100%;
+        box-sizing: border-box;
+      }
+
+
+      .Form {
+        margin-top: -1020px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 720px;
+      }
+
+      .Form1 {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 720px;
+      }
+      @media screen and (max-width: 480px) {
+        .Form {
+          margin-top: 40px;
+        }
+      }
+      .Form-Item {
+        padding-top: 24px;
+        padding-bottom: 24px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+      }
+      @media screen and (max-width: 480px) {
+        .Form-Item {
+          padding-left: 14px;
+          padding-right: 14px;
+          padding-top: 16px;
+          padding-bottom: 16px;
+          flex-wrap: wrap;
+        }
+      }
+      .Form-Item:nth-child(5) {
+        border-bottom: 1px solid #ddd;
+      }
+      .Form-Item-Label {
+        width: 100%;
+        max-width: 248px;
+        letter-spacing: 0.05em;
+        font-weight: bold;
+        font-size: 18px;
+      }
+      @media screen and (max-width: 480px) {
+        .Form-Item-Label {
+          max-width: inherit;
+          display: flex;
+          align-items: center;
+          font-size: 15px;
+        }
+      }
+      .Form-Item-Label.isMsg {
+        margin-top: 8px;
+        margin-bottom: auto;
+      }
+      @media screen and (max-width: 480px) {
+        .Form-Item-Label.isMsg {
+          margin-top: 0;
+        }
+      }
+      .Form-Item-Label-Required {
+        border-radius: 6px;
+        margin-right: 8px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        width: 48px;
+        display: inline-block;
+        text-align: center;
+        background: #c85b5b;
+        color: #fff;
+        font-size: 14px;
+      }
+      @media screen and (max-width: 480px) {
+        .Form-Item-Label-Required {
+          border-radius: 4px;
+          padding-top: 4px;
+          padding-bottom: 4px;
+          width: 32px;
+          font-size: 10px;
+        }
+      }
+      .Form-Item-Input {
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        margin-left: 40px;
+        padding-left: 1em;
+        padding-right: 1em;
+        height: 48px;
+        flex: 1;
+        width: 100%;
+        max-width: 410px;
+        background: #eaedf2;
+        font-size: 18px;
+      }
+      @media screen and (max-width: 480px) {
+        .Form-Item-Input {
+          margin-left: 0;
+          margin-top: 18px;
+          height: 40px;
+          flex: inherit;
+          font-size: 15px;
+        }
+      }
+      .Form-Item-Textarea {
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        margin-left: 40px;
+        padding-left: 1em;
+        padding-right: 1em;
+        height: 216px;
+        flex: 1;
+        width: 100%;
+        max-width: 410px;
+        background: #eaedf2;
+        font-size: 18px;
+      }
+      @media screen and (max-width: 480px) {
+        .Form-Item-Textarea {
+          margin-top: 18px;
+          margin-left: 0;
+          height: 200px;
+          flex: inherit;
+          font-size: 15px;
+        }
+      }
+      .Form-Btn {
+        border-radius: 6px;
+        margin-top: 32px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width: 280px;
+        display: block;
+        letter-spacing: 0.05em;
+        background: #c85b5b;
+        color: #fff;
+        font-weight: bold;
+        font-size: 20px;
+      }
+      @media screen and (max-width: 480px) {
+        .Form-Btn {
+          margin-top: 24px;
+          padding-top: 8px;
+          padding-bottom: 8px;
+          width: 160px;
+          font-size: 16px;
+        }
+      }
+
+
+
+
+
+      .Form-Item-Input1 {
+        font-family: "Comfortaa","Tsukushi B Round Gothic","筑紫B丸ゴシック";
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        position: relative;
+        left: 23%;
+        width: 600px;
+        padding: 20px;
+        background: #eaedf2;
+        font-size: 18px;
+      }
+
+      .Form-Item-Input2 {
+          font-size: 20px;
+        font-family: "Comfortaa","Tsukushi B Round Gothic","筑紫B丸ゴシック";
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        margin-left: 40px;
+        padding-top: 20px;
+        text-align: center;
+        height: 48px;
+        flex: 1;
+        width: 100%;
+        max-width: 410px;
+        background: #eaedf2;
+        font-size: 18px;
+      }
+
+
+      #oder_itemid11{
+          text-align: center;
+          width: 30px;
+      }
+
+      #oder_itemid12{
+          text-align: center;
+          width: 30px;
+      }
+
+      #oder_itemid13{
+          text-align: center;
+          width: 30px;
+      }
+
+      #oder_itemid14{
+          text-align: center;
+          width: 30px;
+      }
+
+      #oder_itemid15{
+          text-align: center;
+          width: 30px;
+      }
+
+      #oder_itemid16{
+          text-align: center;
+          width: 30px;
+      }
+      
+
+  /* main-footer */
+
+  .main-footer{
+    height: 150px;
+    text-align: center;
+    background-color: white;
+    padding-top: 5px;
+}
+
+.main-footer h2{
+    font-size: 50px;
+    font-family: "Comfortaa","Tsukushi B Round Gothic","筑紫B丸ゴシック";
+}
+
+.main-footer small{
+    display: block;
+    font-size: 15px;
+    font-family: "Comfortaa","Tsukushi B Round Gothic","筑紫B丸ゴシック";
+}
+
+/* footer */
+
+footer{
+    height: 310px;
+    background-image: url(img/SIMPLE.cafe_footer-background.png);
+    background-size: auto;
+}
+
+.footer-logo img{
+    width: 250px;
+    height: 250px;
+    position: relative;
+    left: 10%;
+    top: 20px;
+    margin-bottom: -150px;
+}
+
+.footer-nav{
+    list-style: none;
+    text-decoration: none;
+    position: relative;
+    width: 60%;
+    left: 37%;
+    bottom: 30px;
+    top: 20px;
+    margin-bottom: -50px;
+}
+
+.footer-nav li{
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Comfortaa","Tsukushi B Round Gothic","筑紫B丸ゴシック";
+    padding-right: 70px;
+}
+
+.footer-nav a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer-information{
+    position: relative;
+    width: 60%;
+    left: 40%;
+    color: white;
+    font-family: "Comfortaa","Tsukushi B Round Gothic","筑紫B丸ゴシック";
+}
+
+.footer-privacy{
+    position: relative;
+    width: 30%;
+    left: 70%;
+    bottom: 120px;
+}
+
+.footer-privacy a{
+    text-decoration: none;
+    color: white;
+    font-family: "Comfortaa","Tsukushi B Round Gothic","筑紫B丸ゴシック";
+}
+
+.footer-content{
+    position: relative;
+    bottom: 50px;
+} 
+
+.footer-gnav-btn{
+    padding-right: 80px;
+    position: relative;
+    width: 20%;
+    left: 67%;
+    bottom: 75px;
+}
+
+.footer-gnav-btn-item{
+    display: inline;
+    padding: 0 10px;
+}
+
+.footer-gnav-btn-item a{
+    color: white;
+}
+
+.footer-gnav-btn-item a:hover{
+color:#CFC3BA;
+text-decoration:underline;
+text-decoration: none;
+}
+
+
+
+
+
